@@ -1,0 +1,11 @@
+.hello-world {
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.hello-world__message {
+  font-size: 2rem;
+  font-weight: 700;
+}

@@ -1,0 +1,16 @@
+{
+  "extends": "@tsconfig/node24/tsconfig.json",
+  "compilerOptions": {
+    "erasableSyntaxOnly": true,
+    "jsx": "react-jsx",
+    "lib": ["DOM", "DOM.Iterable", "ES2024"],
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "moduleResolution": "Bundler",
+    "noEmit": true,
+    "strict": true,
+    "types": ["node"],
+    "verbatimModuleSyntax": true
+  },
+  "include": [".storybook/**/*.ts", "src", "stories"]
+}

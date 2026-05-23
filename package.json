@@ -1,0 +1,35 @@
+{
+  "name": "react-aria-test",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "webpack serve --config webpack.config.mjs",
+    "storybook": "storybook dev -p 6006",
+    "build": "tsc --noEmit && webpack --config webpack.config.mjs --mode production",
+    "build-storybook": "storybook build --output-dir dist-storybook",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^19.2.6",
+    "react-aria-components": "^1.17.0",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@storybook/react-webpack5": "^10.4.1",
+    "@swc/core": "^1.15.40",
+    "@tsconfig/node24": "^24.0.4",
+    "@types/node": "^25.9.1",
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
+    "css-loader": "^7.1.4",
+    "html-webpack-plugin": "^5.6.7",
+    "storybook": "^10.4.1",
+    "style-loader": "^4.0.0",
+    "swc-loader": "^0.2.7",
+    "typescript": "^6.0.3",
+    "webpack": "^5.107.1",
+    "webpack-cli": "^7.0.2",
+    "webpack-dev-server": "^5.2.4"
+  }
+}
