@@ -2,7 +2,7 @@
   "private": true,
   "name": "react-aria-test",
   "version": "0.1.0",
-  "description": "",
+  "description": "A small React application demonstrating React Aria Components with Storybook.",
   "author": "knzbr@techspikes.dev",
   "license": "MIT",
   "type": "module",
