@@ -1,8 +1,10 @@
 {
+  "private": true,
   "name": "react-aria-test",
   "version": "0.1.0",
+  "description": "",
+  "author": "knzbr@techspikes.dev",
   "license": "MIT",
-  "private": true,
   "type": "module",
   "scripts": {
     "dev": "webpack serve --config webpack.config.ts --mode development",
