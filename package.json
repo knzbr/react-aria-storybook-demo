@@ -12,6 +12,7 @@
     "build": "tsc --noEmit && webpack --config webpack.config.ts --mode production",
     "build-storybook": "storybook build --output-dir dist-storybook",
     "typecheck": "tsc --noEmit",
+    "test:e2e": "playwright test",
     "lint": "npm run lint:biome && npm run lint:eslint",
     "lint:biome": "biome lint .",
     "lint:eslint": "eslint --flag unstable_native_nodejs_ts_config .",
@@ -23,10 +24,11 @@
     "react-dom": "^19.2.6"
   },
   "devDependencies": {
-    "@storybook/react-webpack5": "^10.6.0",
-    "@swc/core": "^1.15.40",
     "@biomejs/biome": "2.5.14",
+    "@playwright/test": "^1.63.0",
+    "@storybook/react-webpack5": "^10.6.0",
     "@stylistic/eslint-plugin": "^5.10.0",
+    "@swc/core": "^1.15.40",
     "@tsconfig/node22": "^22.0.6",
     "@types/node": "^22.20.4",
     "@types/react": "^19.2.15",

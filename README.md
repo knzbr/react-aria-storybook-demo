@@ -1,5 +1,7 @@
 # React Aria Storybook Demo
 
+[![Node.js CI](https://github.com/knzbr/react-aria-storybook-demo/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/knzbr/react-aria-storybook-demo/actions/workflows/ci.yml)
+
 A small React application demonstrating [React Aria Components](https://react-spectrum.adobe.com/react-aria/) with a `HelloWorld` component and Storybook story. The application uses Webpack with SWC for builds and TypeScript throughout its source and tool configuration.
 
 ## Requirements

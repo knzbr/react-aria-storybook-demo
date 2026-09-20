@@ -11,6 +11,5 @@
     "strict": true,
     "types": ["node"],
     "verbatimModuleSyntax": true
-  },
-  "include": [".storybook/**/*.ts", "src", "stories", "webpack.config.ts", "eslint.config.ts"]
+  }
 }
