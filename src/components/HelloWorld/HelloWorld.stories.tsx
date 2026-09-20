@@ -1,17 +1,17 @@
-import type { Meta, StoryObj } from "@storybook/react-webpack5";
+import type { Meta, StoryObj } from '@storybook/react-webpack5'
 
-import { HelloWorld } from "./HelloWorld";
+import { HelloWorld } from './HelloWorld'
 
 const meta = {
-  title: "Components/HelloWorld",
+  title: 'Components/HelloWorld',
   component: HelloWorld,
   args: {
-    message: "Hello World"
+    message: 'Hello World'
   }
-} satisfies Meta<typeof HelloWorld>;
+} satisfies Meta<typeof HelloWorld>
 
-export default meta;
+export default meta
 
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<typeof meta>
 
-export const Default: Story = {};
+export const Default: Story = {}

@@ -1,5 +1,5 @@
 {
-  "extends": "@tsconfig/node24/tsconfig.json",
+  "extends": "@tsconfig/node22/tsconfig.json",
   "compilerOptions": {
     "erasableSyntaxOnly": true,
     "jsx": "react-jsx",
@@ -12,5 +12,5 @@
     "types": ["node"],
     "verbatimModuleSyntax": true
   },
-  "include": [".storybook/**/*.ts", "src", "stories"]
+  "include": [".storybook/**/*.ts", "src", "stories", "webpack.config.ts", "eslint.config.ts"]
 }

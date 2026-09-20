@@ -1,19 +1,19 @@
-import type { StorybookConfig } from "@storybook/react-webpack5";
-import type { Configuration, RuleSetRule } from "webpack";
+import type { StorybookConfig } from '@storybook/react-webpack5'
+import type { Configuration, RuleSetRule } from 'webpack'
 
 const config: StorybookConfig = {
   framework: {
-    name: "@storybook/react-webpack5",
+    name: '@storybook/react-webpack5',
     options: {}
   },
-  stories: ["../src/**/*.stories.tsx"],
+  stories: ['../src/**/*.stories.tsx'],
   webpackFinal: async (webpackConfig) => {
-    const config = webpackConfig as Configuration;
+    const config = webpackConfig as Configuration
 
     config.resolve = {
       ...config.resolve,
-      extensions: [...(config.resolve?.extensions ?? []), ".ts", ".tsx"]
-    };
+      extensions: [...(config.resolve?.extensions ?? []), '.ts', '.tsx']
+    }
 
     config.module = {
       ...config.module,
@@ -23,16 +23,16 @@ const config: StorybookConfig = {
           test: /\.tsx?$/,
           exclude: /node_modules/,
           use: {
-            loader: "swc-loader",
+            loader: 'swc-loader',
             options: {
               jsc: {
                 parser: {
-                  syntax: "typescript",
+                  syntax: 'typescript',
                   tsx: true
                 },
                 transform: {
                   react: {
-                    runtime: "automatic"
+                    runtime: 'automatic'
                   }
                 }
               }
@@ -40,10 +40,10 @@ const config: StorybookConfig = {
           }
         } satisfies RuleSetRule
       ]
-    };
+    }
 
-    return config;
+    return config
   }
-};
+}
 
-export default config;
+export default config
